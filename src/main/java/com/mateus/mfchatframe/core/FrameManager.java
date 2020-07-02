@@ -39,10 +39,11 @@ public class FrameManager {
             try {
                 if (isGif(file)) {
                     frames.add(new GifFrame(file,plugin));
+                    num++;
                 } else if (isImage(file)) {
                     frames.add(new ImageFrame(file));
-                }
-                num++;
+                    num++;
+                }             
             } catch (IOException e) {
                 e.printStackTrace();
             }
