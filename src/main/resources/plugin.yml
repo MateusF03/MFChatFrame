@@ -1,0 +1,8 @@
+name: MFChatFrame
+version: 1.0
+api-version: 1.16
+main: com.mateus.mfchatframe.Main
+author: Mateusaum
+commands:
+  frame:
+    description: Main command for the plugin
