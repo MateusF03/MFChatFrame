@@ -97,11 +97,7 @@ public class GifFrame implements Frame {
                 } else {
                     ChainedTextComponent ctc = new ChainedTextComponent("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                     BufferedImage image = resize(images.get(i),24,21);
-                    try {
-                        ImageIO.write(image, "png", new File(plugin.getDataFolder(), i+".png"));
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+   
                     for (int y = 0; y < image.getHeight(); y++) {
                         for (int x = 0; x < image.getWidth(); x++) {
                             Color color = new Color(image.getRGB(x,y));
